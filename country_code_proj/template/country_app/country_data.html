@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>all countries</title>
+</head>
+<body>
+
+<h1>all countries</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>capital</th>
+        <th>region</th>
+        <th>area</th>
+        <th>population</th>
+        <th>timezones</th>
+        <th>postal code</th>
+
+
+    </tr>
+    </thead>
+    <tbody>
+    {% for i in data %}
+    <tr>
+       <td>{{i.name.common}}</td>
+        <td>{{i.capital.0}}</td>
+        <th>{{i.region}}</th>
+        <th>{{i.area}}</th>
+        <th>{{i.population}}</th>
+        <th>{{i.timezones}}</th>
+        <th>{{i.postalCode}}</th>
+    </tr>
+
+    {% endfor %}
+
+    </tbody>
+</table>
+
+</body>
+</html>
